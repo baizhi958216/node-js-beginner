@@ -478,10 +478,11 @@ async function run() {
 
 run();
 
-npm init
-npm config set registry https://registry.npm.taobao.org
-npm install --save-dev pretter
-npm install express
+// npm
+// npm init
+// npm config set registry https://registry.npm.taobao.org
+// npm install --save-dev pretter
+// npm install express
 
 require("dotenv").config();
 const express = require("express");
