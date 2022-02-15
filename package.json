@@ -1,0 +1,24 @@
+{
+    "name": "js-beginner",
+    "version": "1.0.0",
+    "description": "https://docs.microsoft.com/zh-cn/shows/Beginners-Series-to-JavaScript/Beginning-the-Beginners-series-1-of-51",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "format": "prettier --write *.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@gitee.com:baizhi958216/node-js-beginner.git"
+    },
+    "author": "baizhi958216",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^2.5.1"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2"
+    }
+}

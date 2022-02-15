@@ -70,7 +70,6 @@
 // console.log(typeof(person));
 // console.log(typeof(sayHello));
 
-
 // console.log("------instanceof------");
 // console.log(people instanceof Array);
 // console.log(one instanceof Number);
@@ -221,7 +220,6 @@
 //     console.log('Unknown Status');
 // }
 
-
 // const statuss = 401;
 // switch (statuss) {
 //     case 200:
@@ -270,7 +268,6 @@
 // for (const index of arr1) {
 //     console.log(arr1[index - 1]);
 // }
-
 
 // let arr1 = [];
 // arr1.push(1);
@@ -439,3 +436,64 @@
 // console.log(bookObj.checkIn() === bookObj);
 // console.log(anotherCheckIn());
 // console.log(anotherCheckIn() === globalThis);
+
+// function promiseTimeout(ms) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(resolve, ms);
+//     });
+// }
+
+// promiseTimeout(2000)
+//     .then(() => {
+//         console.log('Done!!');
+//         return promiseTimeout(1000);
+//     }).then(() => {
+//         console.log('Also done!!');
+//     }).catch(() => {
+//         console.log('Error!!');
+//     })
+
+// function promiseTimeout(ms) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(resolve, ms);
+//     });
+// }
+
+// async function longRunningOperation() {
+//     return 43;
+// }
+
+// async function run() {
+//     console.log("Start!!");
+//     // promiseTimeout(2000);
+//     await promiseTimeout(2000);
+
+//     // const response = longRunningOperation();
+//     const response = await longRunningOperation();
+//     console.log(response);
+
+//     console.log("Stop!!");
+// }
+
+// run();
+
+// npm init
+// npm config set registry https://registry.npm.taobao.org
+// npm install --save-dev pretter
+// npm install express
+
+// require("dotenv").config();
+// const express = require("express");
+// const app = express();
+// // const port = 3000;
+// const port = process.env.PORT;
+// // 端口号设置在.env文件内
+// // PORT=5000
+// // .gitignore文件配置了.env node_modules/
+
+// app.get("/", (req, res) => {
+//     res.send("HelloWorld");
+// });
+// app.listen(port, () => {
+//     console.log(`Example app listening at http://localhost:${port}`);
+// });
